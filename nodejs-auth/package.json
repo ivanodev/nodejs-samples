@@ -28,7 +28,6 @@
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-plugin-transform-typescript-metadata": "^0.3.0",
     "jest": "^28.1.0",
-    "mysql": "^2.18.1",
     "pg": "^8.7.3",
     "sinon": "^14.0.0",
     "ts-jest": "^28.0.3",
