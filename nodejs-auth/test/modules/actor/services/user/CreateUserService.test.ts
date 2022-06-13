@@ -12,7 +12,10 @@ describe('CreateUserService', () => {
     const createUserService = new CreateUserService(userRepository);
 
     const mockUserServiceHelper = sinon.mock(UserServiceHelper);
-    mockUserServiceHelper.expects('validateUserRoles').returns(['123', '456']);
+    mockUserServiceHelper.expects('validateUserRoles').returns([
+      'a8d66d51-f713-469a-8d76-82620e032265', 
+      'd826373b-9226-4dac-9f14-c62e7a5fe8f7'
+    ]);
 
     const mockUser = {
       confirmedUser: true,

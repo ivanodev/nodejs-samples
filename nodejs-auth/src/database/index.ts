@@ -21,4 +21,5 @@ createConnection().then(async () => {
 }).catch((err) => {
 
   console.log(`Database connection error. - ${(err as any).message}. Check your network connection.`);
-});
+}); 
+
