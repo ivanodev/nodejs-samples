@@ -1,0 +1,23 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "alpa##2022",
+  "database": "auth",
+  "synchronize": false,
+  "entities": [
+    "./src/modules/**/model/*.ts", 
+    "./src/modules/**/**/model/.ts",
+
+    "./src/modules/**/entities/*.ts",
+    "./src/modules/**/**/entities/.ts"
+  ],
+  "migrations": [
+    "./src/common/infra/database/postgres/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/common/infra/database/postgres/migrations"
+  }
+}
+
